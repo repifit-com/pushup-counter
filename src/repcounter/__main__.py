@@ -26,10 +26,10 @@ def main():
 
     movinet = MoviNet()
 
-    for frames, top_k_result in movinet(file_path=args.input, start_frame=args.start_frame, end_frame=args.end_frame):
-        print("-" * 10)
-        print(f"Frames: {frames}")
-        print(f"Top K result: {top_k_result}")
+    for pred in movinet(
+        file_path=args.input, start_frame=args.start_frame, end_frame=args.end_frame
+    ):
+        print(pred)
 
 
 if __name__ == "__main__":
