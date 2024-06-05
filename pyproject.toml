@@ -1,0 +1,35 @@
+
+[build-system]
+requires      = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "repcounter"
+version = "0.0.1"
+description = "A Python package designed to count exercise repetitions accurately and efficiently"
+readme = "README.md"
+license = { file = "LICENSE" }
+authors = [
+  { name="Sy An", email="syan.vn@gmail.com" },
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["ocr", "textract", "documentai"]
+dependencies = [
+    "numpy",
+    "tensorflow",
+    "mediapipe",
+    "opencv-python",
+]
+requires-python = ">=3.8"
+
+[project.scripts]
+repcounter = "repcounter.__main__:main"
+
+
+[project.urls]
+"Homepage" = "https://github.com/repifit-com/repcounter"
+"Bug Tracker" = "https://github.com/repifit-com/repcounter/issues"
